@@ -41,7 +41,8 @@ public class q2 {
                               }
                                      }
                        
-                                
+                     
+              
               System.out.println("l'amplitude est "+amp);
      
         
