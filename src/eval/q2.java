@@ -22,13 +22,13 @@ public class q2 {
         final int nl=5, nc=2;
               int  max,min,amp=0,j,i;
               int tab [][]= new int [nl][nc];
-              
+              //lecture du tableau
               for (i=0;i<nl;i++){
                for (j=0; j<nc; j++){
             System.out.print("saisir une valeur");
           tab [i][j]=reader.nextInt();}
               }
-              
+              //recherce du min et du max
               max=tab[0][0];
               min=tab[0][0];
               for (i=1;i<nl;i++){

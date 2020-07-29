@@ -21,22 +21,31 @@ public class q1 {
         
            Scanner reader = new Scanner(System.in);
        final int n=10;
+       int i,tmp;
+       //declaration du tableau 
        int[] tab;
-       int i;      
+       //creation du tableau 
        tab= new int [n];
+       //lecture du tableau
        
         for(i=0; i<n;i++){
         System.out.print("saisir une valeur");
         tab[i]=reader.nextInt();
         }
-         
-          for (i=0;i<n;i++){
+         //reverse
+          for (i=0;i<n/2;i++){
+              tmp=tab[i];
+              tab[i]=tab[n-i-1];
+              tab[n-i-1]=tmp;
+          }
+              //affichage du tableau inversé
+              for (i=0; i<n; i++){
            
-      
+      System.out.print(tab[i] + "");}
               
         
-            System.out.println
-        (tab[i]);
+            
+        
           }
         
         
@@ -45,4 +54,4 @@ public class q1 {
           
     }
     
-}
+
